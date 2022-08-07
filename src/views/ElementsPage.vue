@@ -29,6 +29,7 @@ export default {
 .elements-home {
   max-width: 1440px;
   margin: 0 auto;
+  max-height: 100vh;
 }
 .tagline {
   margin-top: 200px;

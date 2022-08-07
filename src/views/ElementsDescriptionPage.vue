@@ -1,6 +1,6 @@
 <template>
   <div class="elements-description">
-    <body>
+    <body class="body">
       <div class="wrapper">
         <div class="joystick">
           <div class="up" @click="goUp">
@@ -180,7 +180,7 @@ export default {
 </script>
 
 <style scoped>
-body {
+.body {
   padding-top: 140px;
 }
 .elements-description body {
