@@ -121,7 +121,7 @@ export default {
   },
   methods: {
     onScroll() {
-      console.log(window.scrollY);
+      // console.log(window.scrollY);
       if (window.scrollY < 600) {
         this.arrow_color_top = "#dfdfdf";
         this.navbar_color = 1;
@@ -150,23 +150,23 @@ export default {
         window.scrollTo({ top: 0, behavior: "smooth" });
       }
       if (this.navbar_color === 3) {
-        window.scrollTo({ top: 1130, behavior: "smooth" });
+        window.scrollTo({ top: 960, behavior: "smooth" });
       }
       if (this.navbar_color === 4) {
-        window.scrollTo({ top: 2100, behavior: "smooth" });
+        window.scrollTo({ top: 1900, behavior: "smooth" });
       }
     },
     goDown() {
       if (this.navbar_color === 1) {
-        window.scrollTo({ top: 1130, behavior: "smooth" });
+        window.scrollTo({ top: 960, behavior: "smooth" });
         console.log("get down");
       }
       if (this.navbar_color === 2) {
-        window.scrollTo({ top: 2100, behavior: "smooth" });
+        window.scrollTo({ top: 1900, behavior: "smooth" });
         console.log("get down");
       }
       if (this.navbar_color === 3) {
-        window.scrollTo({ top: 2763, behavior: "smooth" });
+        window.scrollTo({ top: 2775, behavior: "smooth" });
         console.log("get down");
       }
     },
@@ -199,15 +199,13 @@ export default {
   cursor: pointer;
 }
 .joystick .down {
-  margin-top: 70vh;
+  margin-top: 100px;
   cursor: pointer;
 }
 .main {
   margin-left: 150px;
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  margin-bottom: 350px;
 }
 .girls:last-child {
   border: none;
@@ -216,7 +214,7 @@ export default {
   min-height: 50vh;
   margin-bottom: 80px;
   border-bottom: 1px solid #eaeaea;
-  padding-top: 150px;
+  padding-top: 75px;
   padding-bottom: 70px;
 }
 .wrapper-girls {
