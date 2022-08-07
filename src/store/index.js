@@ -3,11 +3,11 @@ import { createStore } from "vuex";
 // Create a new store instance.
 export default createStore({
   state: {
-    element: 1,
+    element: 0,
   },
   mutations: {
-    changeElement(value) {
-      this.state.element = value;
+    changeElement(state, value) {
+      state.element = value;
     },
   },
   getters: {

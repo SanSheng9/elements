@@ -108,7 +108,6 @@ export default {
       air_on: false,
       water_on: false,
       earth_on: false,
-      color: this.$store.getters.getElement,
     };
   },
   computed: {
@@ -117,7 +116,13 @@ export default {
     },
   },
   watch: {
-    color: function (NewValue) {
+    element: function (NewValue) {
+      if (NewValue === 0) {
+        (this.fire_on = false),
+          (this.air_on = false),
+          (this.water_on = false),
+          (this.earth_on = false);
+      }
       // Fire
       if (NewValue === 1) {
         (this.fire_on = true),

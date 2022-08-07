@@ -23,7 +23,9 @@
                   </div>
                 </div>
                 <div class="services">
-                  <div class="title"><p>SERVICES</p></div>
+                  <div class="title">
+                    <p @click="$store.commit('changeElement', 1)">SERVICES</p>
+                  </div>
                   <div class="section-block">
                     <div v-for="sum in girl.price" :key="sum" class="section">
                       <div class="hours"><p>for 1 hour</p></div>
@@ -110,11 +112,12 @@ export default {
     //setTimeout(this.startWithFire, 5);
     window.addEventListener("scroll", this.onScroll);
     if (window.scrollY === 0) {
-      this.color_fire = true;
+      this.$store.commit("changeElement", 1);
     }
   },
   unmounted() {
     window.removeEventListener("scroll", this.onScroll);
+    this.$store.commit("changeElement", 0);
   },
   methods: {
     onScroll() {
