@@ -93,16 +93,16 @@ export default {
     async goElem(num) {
       if (num === 1) {
         await this.$router.push("/elements");
-        await window.scrollTo({ top: 1 });
+        await window.scrollTo({ top: 0 });
       } else if (num === 2) {
         await this.$router.push("/elements");
-        await window.scrollTo({ top: 2100 });
+        await window.scrollTo({ top: 1900 });
       } else if (num === 3) {
         await this.$router.push("/elements");
-        await window.scrollTo({ top: 1130 });
+        await window.scrollTo({ top: 960 });
       } else if (num === 4) {
         await this.$router.push("/elements");
-        await window.scrollTo({ top: 2763 });
+        await window.scrollTo({ top: 2775 });
       }
     },
   },
