@@ -191,7 +191,7 @@ export default {
 }
 .joystick {
   position: fixed;
-  margin-left: 20px;
+  margin-left: 30px;
   margin-top: 70px;
 }
 .joystick .up {
@@ -203,7 +203,7 @@ export default {
   cursor: pointer;
 }
 .main {
-  margin-left: 150px;
+  margin-left: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -219,6 +219,33 @@ export default {
 }
 .wrapper-girls {
   display: flex;
+}
+@media (max-width: 1000px) {
+  .wrapper-girls {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .img-block {
+    margin-bottom: 15px;
+  }
+  .under-img {
+    margin-bottom: 10px;
+  }
+  .girls {
+    padding-top: 0px;
+    margin-top: 15px;
+  }
+  /*.img-block {*/
+  /*  display: flex;*/
+  /*  flex-direction: column-reverse;*/
+  /*}*/
+  .joystick {
+    display: none;
+  }
+  .main {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
 .text-block {
   flex: 0 0 50%;
@@ -267,7 +294,7 @@ export default {
   flex: 0 0 500px;
 }
 .img-block img {
-  width: 100%;
+  max-width: 100%;
 }
 .under-img {
   display: flex;
@@ -282,6 +309,6 @@ export default {
   flex: 0 1 15%;
 }
 .icon-like img {
-  width: 80%;
+  max-width: 80%;
 }
 </style>

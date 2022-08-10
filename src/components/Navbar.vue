@@ -182,6 +182,7 @@ export default {
   top: 0;
   padding-top: 30px;
   border-bottom: 1px solid #eaeaea;
+  z-index: 10;
 }
 .wrapper {
   display: flex;
@@ -197,6 +198,11 @@ export default {
   line-height: 33px;
   text-align: center;
   letter-spacing: 0.04em;
+}
+@media (max-width: 555px) {
+  .navigation-text {
+    display: none;
+  }
 }
 .logo {
   display: flex;

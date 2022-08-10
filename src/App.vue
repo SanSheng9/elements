@@ -1,9 +1,7 @@
 <template>
-  <div id="app">
-    <component :is="layout">
-      <router-view />
-    </component>
-  </div>
+  <component :is="layout">
+    <router-view />
+  </component>
 </template>
 
 <script>
@@ -95,8 +93,6 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.app {
-}
 @font-face {
   font-family: "Jura";
   src: local("Jura"),
@@ -109,5 +105,12 @@ p {
 @font-face {
   font-family: "Karma";
   src: local("Karma"), url("./assets/fonts/Karma.otf") format("otf");
+}
+#app {
+  min-width: 100vw;
+  margin: 0 auto;
+}
+html {
+  min-width: 100%;
 }
 </style>

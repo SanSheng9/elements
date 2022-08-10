@@ -1,14 +1,12 @@
 <template>
-  <div>
-    <div class="tagline">
-      <div class="banner">
-        <div class="wrapper-banner">
-          <p>four elements, four sisters, endless possibilities</p>
-        </div>
+  <div class="tagline">
+    <div class="banner">
+      <div class="wrapper-banner">
+        <p>four elements, four sisters, endless possibilities</p>
       </div>
     </div>
-    <Elements class="elements-home" />
   </div>
+  <Elements class="elements-home" />
 </template>
 
 <script>
@@ -30,16 +28,11 @@ export default {
   max-width: 1440px;
   margin: 0 auto;
   max-height: 100vh;
+  margin-top: 10vh !important;
+  min-width: 100vw;
 }
 .tagline {
   margin-top: 200px;
-}
-.elements-home {
-  margin-top: 10vh !important;
-  margin-bottom: 50px !important;
-}
-.banner {
-  min-width: 861px;
 }
 .wrapper-banner {
   background: linear-gradient(
@@ -69,4 +62,10 @@ export default {
 /*  height: 1px;*/
 /*  width: 100vw;*/
 /*}*/
+@media (max-width: 890px) {
+  .tagline {
+    margin-top: 130px;
+    margin-bottom: 0;
+  }
+}
 </style>

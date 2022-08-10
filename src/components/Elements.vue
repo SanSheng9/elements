@@ -116,6 +116,19 @@ export default {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 1000px) {
+  .girls {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .fire,
+  .water,
+  .air,
+  .earth {
+    margin-bottom: 100px;
+  }
+}
 .girls p {
   font-size: 28px;
   text-transform: uppercase;
@@ -175,5 +188,8 @@ export default {
   height: 3px;
   top: 456px;
   left: 7px;
+}
+.elements {
+  min-width: 100vw;
 }
 </style>

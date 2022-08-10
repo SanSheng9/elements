@@ -17,9 +17,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.default {
-  position: relative;
-  overflow: hidden;
-}
-</style>
+<style scoped></style>
